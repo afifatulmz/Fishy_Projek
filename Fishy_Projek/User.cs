@@ -9,16 +9,17 @@ namespace Fishy_Projek
         private int idUser;
         private string nama;
         private string password;
-    
 
-    public User(int idUser, string nama, string password)     
-    {
-        this.idUser = idUser;
-        this.nama = nama;
-        this.password = password;
-    }
 
-    
+        public User(int idUser, string nama, string password)
+        {
+            this.idUser = idUser;
+            this.nama = nama;
+            this.password = password;
+        }
+
+        public abstract void HakAksesMenu();
+        
 
 
 
