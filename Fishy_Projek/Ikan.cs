@@ -15,10 +15,11 @@ namespace Fishy_Projek
         public Ikan(string idIkan, string namaIkan, double suhuIdeal, double batasSuhu)
         {
             this.idIkan = idIkan;
-            this namaIkan = namaIkan;
+            this.namaIkan = namaIkan;
+            this.suhuIdeal = suhuIdeal;
+            this.batasSuhu = batasSuhu;
         }
 
 
     }
-
 }
