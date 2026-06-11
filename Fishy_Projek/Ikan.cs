@@ -6,13 +6,13 @@ namespace Fishy_Projek
 {
     public class Ikan
     {
-        private string idIkan;
+        private int idIkan;
         private string namaIkan;
         private double suhuIdeal;
         private double batasSuhu;
 
 
-        public Ikan(string idIkan, string namaIkan, double suhuIdeal, double batasSuhu)
+        public Ikan(int idIkan, string namaIkan, double suhuIdeal, double batasSuhu)
         {
             this.idIkan = idIkan;
             this.namaIkan = namaIkan;
