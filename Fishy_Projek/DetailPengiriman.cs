@@ -4,20 +4,20 @@ using System.Text;
 
 namespace Fishy_Projek
 {
-    internal class ClassDetailPengiriman
+    internal class DetailPengiriman
     {
         private string _idPengiriman;
         private int _idStok;
         private double _kuantitasKirim;
 
-        public ClassDetailPengiriman()
+        public DetailPengiriman()
         {
             _idPengiriman = string.Empty;
             _idStok = 0;
             _kuantitasKirim = 0;
         }
 
-        public ClassDetailPengiriman(string idPengiriman, int idStok, double kuantitasKirim)
+        public DetailPengiriman(string idPengiriman, int idStok, double kuantitasKirim)
         {
             _idPengiriman = idPengiriman;
             _idStok = idStok;

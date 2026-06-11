@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Fishy_Projek
 {
-    internal class ClassPengiriman
+    internal class Pengiriman
     {
         private string _idPengiriman;
         private int _idUser;
@@ -13,7 +13,7 @@ namespace Fishy_Projek
         private string _noArmada;
         private List<string> _detailStokBawaan;
 
-        public ClassPengiriman()
+        public Pengiriman()
         {
             _idPengiriman = string.Empty;
             _idUser = 0;
@@ -23,7 +23,7 @@ namespace Fishy_Projek
             _detailStokBawaan = new List<string>();
         }
 
-        public ClassPengiriman(string idPengiriman, int idUser, DateTime waktuKirim,
+        public Pengiriman(string idPengiriman, int idUser, DateTime waktuKirim,
                                 string tujuan, string noArmada, List<string> detailStokBawaan)
         {
             _idPengiriman = idPengiriman;
