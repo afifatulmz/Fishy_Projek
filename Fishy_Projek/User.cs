@@ -6,16 +6,19 @@ namespace Fishy_Projek
 {
     public abstract class User
     {
-        private int idUser;
-        private string nama;
-        private string password;
+        private int idUser { get; set; }
+        private string Nama { get; set; }
+        private string Password { get; set; }
+        private int idRole { get; set; }
 
 
-        public User(int idUser, string nama, string password)
+
+        public User(int idUser, string nama, string password, int idRole)
         {
             this.idUser = idUser;
-            this.nama = nama;
-            this.password = password;
+            this.Nama = Nama;
+            this.Password = Password;
+            this.idRole = idRole;
         }
 
         public abstract void HakAksesMenu();
