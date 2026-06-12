@@ -8,7 +8,7 @@ namespace Fishy_Projek.Repositories
 {
     public class OperasionalRepository
     {
-        // 1. INPUT LOG SUHU HARIAN
+        
         public void SimpanBatchIkan(BatchIkan batch)
         {
             using (var conn = DbHelper.GetConnection())
@@ -26,7 +26,7 @@ namespace Fishy_Projek.Repositories
             }
         }
 
-        // 2. TRANSAKSI IKAN MASUK (sp_terima_stok)
+
         public void EksekusiStoredProcedureTerimaStok(string idIkan, string idRuang, double jml, int idUser)
         {
             using (var conn = DbHelper.GetConnection())
@@ -44,7 +44,7 @@ namespace Fishy_Projek.Repositories
             }
         }
 
-        // 3. TRANSAKSI PENGIRIMAN KELUAR (sp_proses_pengiriman)
+        
         public void EksekusiStoredProcedurePengiriman(string idPengiriman, int idUser, string tujuan, string noArmada, int idStok, double kuantitas)
         {
             using (var conn = DbHelper.GetConnection())
