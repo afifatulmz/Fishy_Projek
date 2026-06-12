@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Fishy_Projek
+namespace Fishy_Projek.Models
 {
     public class Operator : User
     {

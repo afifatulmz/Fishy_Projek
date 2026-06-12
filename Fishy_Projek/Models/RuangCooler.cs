@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Fishy_Projek
+namespace Fishy_Projek.Models
 {
     public class RuangCooler
     {
-        private int idRuang;
-        private int idGudang;
-        private string namaRuang;
-        private decimal kapasitasTon;
+        public string idRuang;
+        public int idGudang;
+        public string namaRuang;
+        public double  kapasitasTon;
 
-        public RuangCooler(int idRuang, int idGudang, string namaRuang, decimal kapasitasTon)
+        public RuangCooler(string idRuang, int idGudang, string namaRuang, double kapasitasTon)
         {
             this.idRuang = idRuang;
             this.idGudang = idGudang;
@@ -19,7 +19,7 @@ namespace Fishy_Projek
             this.kapasitasTon = kapasitasTon;
         }
 
-        public int IdRuang
+        public string IdRuang
         {
             get { return idRuang; }
             set { idRuang = value; }
@@ -37,7 +37,7 @@ namespace Fishy_Projek
             set { namaRuang = value; }
         }
 
-        public decimal KapasitasTon
+        public double KapasitasTon
         {
             get { return kapasitasTon; }
             set { kapasitasTon = value; }

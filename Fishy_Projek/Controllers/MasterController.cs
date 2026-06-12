@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Fishy_Projek.Models;
+using System;
+using Fishy_Projek.Repositories;
 
-namespace Fishy_Projek
+namespace Fishy_Projek.Controllers
 {
     public class MasterController
     {
@@ -18,10 +20,10 @@ namespace Fishy_Projek
             
             Ikan ikanBaru = new Ikan
             {
-                IdIkan = id,
-                NamaIkan = nama,
-                SuhuIdeal = ideal,
-                BatasSuhu = batas
+                idIkan = id,
+                namaIkan = nama,
+                suhuIdeal = ideal,
+                batasSuhu = batas
             };
 
             _repo.TambahIkan(ikanBaru);

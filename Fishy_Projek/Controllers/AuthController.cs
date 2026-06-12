@@ -1,7 +1,9 @@
 ﻿using System;
+using Fishy_Projek.Helpers;
+using Fishy_Projek.Models;
 using Npgsql;
 
-namespace Fishy_Projek
+namespace Fishy_Projek.Controllers
 {
     public class AuthController
     {

@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Fishy_Projek
+namespace Fishy_Projek.Models
 {
     public abstract class User
     {
         private int idUser { get; set; }
-        private string Nama { get; set; }
-        private string Password { get; set; }
+        private string? Nama { get; set; }
+        private string? Password { get; set; }
         private int idRole { get; set; }
 
 
