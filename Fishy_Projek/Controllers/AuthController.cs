@@ -8,16 +8,16 @@ namespace Fishy_Projek.Controllers
     public class AuthController
     {
         
-        public User ValidasiLogin(string namaUser, string passwordUser)
+        public User ValidasiLogin(string usernameInput, string passwordUser)
         {
             using (var conn = DbHelper.GetConnection())
             {
                 conn.Open();
-                string query = "SELECT id_user, nama, password, id_role FROM users WHERE nama = @nama AND password = @pass";
+                string query = "SELECT id_user, nama, username, password, id_role FROM users WHERE nama = @nama AND password = @pass";
 
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@nama", namaUser);
+                    cmd.Parameters.AddWithValue("@username", usernameInput);
                     cmd.Parameters.AddWithValue("@pass", passwordUser);
 
                     using (var reader = cmd.ExecuteReader())
@@ -26,8 +26,9 @@ namespace Fishy_Projek.Controllers
                         {
                             int idUser = reader.GetInt32(0);
                             string nama = reader.GetString(1);
-                            string pass = reader.GetString(2);
-                            int idRole = reader.GetInt32(3);
+                            string username = reader.GetString(2);
+                            string pass = reader.GetString(3);
+                            int idRole = reader.GetInt32(4);
 
                             
                             if (idRole == 1)

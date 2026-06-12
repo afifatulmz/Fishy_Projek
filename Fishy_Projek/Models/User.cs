@@ -6,18 +6,20 @@ namespace Fishy_Projek.Models
 {
     public abstract class User
     {
-        private int idUser { get; set; }
-        private string? Nama { get; set; }
-        private string? Password { get; set; }
-        private int idRole { get; set; }
+        public int idUser { get; set; }
+        public string? Nama { get; set; }
+        public string Username { get; set; }
+        public string? Password { get; set; }
+        public int idRole { get; set; }
 
 
 
-        public User(int idUser, string nama, string password, int idRole)
+        public User(int idUser, string nama, string username, string password, int idRole)
         {
             this.idUser = idUser;
-            this.Nama = Nama;
-            this.Password = Password;
+            this.Nama = nama;
+            this.Username = username;
+            this.Password = password;
             this.idRole = idRole;
         }
 

@@ -6,17 +6,17 @@ namespace Fishy_Projek.Models
 {
     public class Stok
     {
-        private string idStok;
-        private int idIkan;
-        private int idRuang;
-        private int kuantitasKg;
+        private string IdStok;
+        private int IdIkan;
+        private int IdRuang;
+        private int KuantitasKg;
 
     public Stok(string idStok, int idIkan, int idRuang, int kuantitasKg)
         {
-            this.idStok = idStok;
-            this.idIkan = idIkan;
-            this.idRuang = idRuang;
-            this.kuantitasKg = kuantitasKg;
+            this.IdStok = idStok;
+            this.IdIkan = idIkan;
+            this.IdRuang = idRuang;
+            this.KuantitasKg = kuantitasKg;
         }
     }
 }
