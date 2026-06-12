@@ -20,10 +20,10 @@ namespace Fishy_Projek.Controllers
             
             Ikan ikanBaru = new Ikan
             {
-                idIkan = id,
-                namaIkan = nama,
-                suhuIdeal = ideal,
-                batasSuhu = batas
+                IdIkan = id,
+                NamaIkan = nama,
+                SuhuIdeal = ideal,
+                BatasSuhu = batas
             };
 
             _repo.TambahIkan(ikanBaru);
